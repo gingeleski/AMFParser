@@ -1,10 +1,10 @@
-# AMFParser
+# AMF parser for Fiddler
 
-AMFParser plugin for Fiddler2 web debugger. It can be used for parsing and displaying AMF data inside HTTP's POST requests and responses. To know more about AMF or Adobe Message Format, please refer to http://en.wikipedia.org/wiki/Action_Message_Format.
+AMF parser plugin for Fiddler proxy. Allows inspection of [Adobe Message Format](http://en.wikipedia.org/wiki/Action_Message_Format) in requests and responses.
 
-This project is to provide AMF binary POST data parser functionality to Fiddler2. It works as Fiddler2 addon and shows it's own tab inside Fiddler2 inspector tab. This addon can be very helpful when you need to parse and display what's inside AMF data.
+This works as a Fiddler addon and shows its own tab inside Fiddler's inspector. Off the shelf Fiddler does not parse or display what's inside AMF content.
 
-Currently it provides parsing functionality and experimental editing functionality.
+Currently this provides parsing and experimental editing functionalities.
 
 Old repository is left for reference purpose only: https://amfparser.codeplex.com/
 
@@ -17,14 +17,16 @@ Old repository is left for reference purpose only: https://amfparser.codeplex.co
 ### FOR DEVELOPMENT
 Visual Studio 2003 or greater
 
-## How to Install
+## How to install
 
-Copy AMFParser.dll to Inspectors directory under Fiddler2 installation directory(usually %ProgramFiles%\Fiddler2\Inspectors).
+Copy `AMFParser.dll` to the Inspectors directory of your Fiddler installation (i.e. `%ProgramFiles%\Fiddler2\Inspectors`).
+
+Find a precompiled `AMFParser.dll` [here from June 2018](https://github.com/gingeleski/AMFParser/releases/tag/Jun2018a).
 
 ## How to use
 
-* Launch Fiddler2
-* The AMF tab will appear as one of Fiddler2 inspector tabs.
+* Launch Fiddler
+* The AMF tab will appear as one of Fiddler's inspector tabs.
 * The AMF tab will show data whenever it encounters AMF encoded POST data.
 
 ## New BSD License (BSD)
